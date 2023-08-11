@@ -323,21 +323,60 @@ nav h3 {
 }
 
 footer {
-  background-color: rgb(179, 174, 174);
+  padding-left: 45px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: white;
-  margin-top: 25px;
-  font-size: 20px;
-}
-footer section {
-  max-width: 1500px;
-  margin: auto;
-  display: flex;
+  padding-right: 25px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #292727;
   justify-content: space-between;
 }
-footer div {
-  margin-left: 125px;
+footer svg {
+  fill: white;
+  cursor: pointer;
+}
+footer svg:hover {
+  fill: rgb(180, 56, 56);
+}
+footer p {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  max-width: 220px;
+  color: white;
+  padding: 5px 0px;
+}
+footer a {
+  color: white;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+footer a:hover {
+  color: rgb(180, 56, 56);
+}
+footer p:hover {
+  color: rgb(180, 56, 56);
+}
+footer div span svg {
+  margin-top: 5px;
+}
+footer h3 {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  max-width: 250px;
+  color: #6a6a6a;
+  padding: 5px 0px;
+}
+footer div div svg {
+  margin-right: 15px;
+}
+footer div p {
+  margin-top: -2px;
+  cursor: pointer;
+}
+footer p {
+  margin-top: 5px;
 }
 
 .about__us-heder {
@@ -761,8 +800,7 @@ body {
 }
 .MaxiSys__functions img {
   max-width: 100%;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 15px;
   border-radius: 20px;
 }
 .MaxiSys__functions h3 {
@@ -779,8 +817,8 @@ body {
 }
 .MaxiSys__intelectual-diagnostick {
   background: #f4f4f4;
-  padding-top: 25px;
-  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 .MaxiSys__intelectual-diagnostick div {
@@ -793,8 +831,6 @@ body {
 }
 .MaxiSys__intelectual-diagnostick img {
   max-width: 100%;
-  margin-left: 25px;
-  margin-right: 25px;
   border-radius: 20px;
   margin-top: 10px;
 }
@@ -850,20 +886,22 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(55, 149, 243);
 }
-.MaxiSys__intelectual-diagnostick section {
+.MaxiSys__intelectual-diagnostick .text-line {
   margin-left: 10px;
   grid-template-columns: 1fr 1fr;
+  grid-row: auto;
   display: grid;
   grid-gap: 12px;
+  margin-top: 20px;
 }
-.MaxiSys__intelectual-diagnostick section div {
+.MaxiSys__intelectual-diagnostick .text-line div {
   border-top: 1px solid rgb(55, 149, 243);
 }
-.MaxiSys__intelectual-diagnostick section h1 {
+.MaxiSys__intelectual-diagnostick .text-line h1 {
   padding-bottom: 0px;
   font-size: 25px;
 }
-.MaxiSys__intelectual-diagnostick section span {
+.MaxiSys__intelectual-diagnostick .text-line span {
   margin-top: 30px;
 }
 .MaxiSys__MaxiFlash span {
@@ -874,7 +912,7 @@ body {
   grid-gap: 12px;
 }
 .MaxiSys__MaxiFlash span div {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgb(55, 149, 243);
 }
 .MaxiSys__MaxiFlash span h1 {
@@ -886,16 +924,595 @@ body {
 .MaxiSys__MaxiFlash span span {
   margin-top: 30px;
 }
+.MaxiSys__differents {
+  padding-top: 25px;
+  max-width: 527px;
+  margin: auto;
+}
+.MaxiSys__differents h1 {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.MaxiSys__differents h1 span {
+  color: black;
+}
+.MaxiSys__differents img {
+  margin-left: 38%;
+}
+.MaxiSys__differents h4 {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MaxiSys__differents p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  color: #6a6a6a;
+  font-weight: bold;
+  padding-top: 7px;
+  margin-bottom: 10px;
+}
+.MaxiSys__differents button {
+  background-color: rgb(55, 149, 243);
+  padding: 15px 45px;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 28%;
+  margin-bottom: 45px;
+}
+.MaxiSys__MaxiFlashs {
+  max-width: 527px;
+  margin: auto;
+  padding-top: 10px;
+}
+.MaxiSys__MaxiFlashs h1 {
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.MaxiSys__MaxiFlashs span h1 {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.MaxiSys__MaxiFlashs h4 {
+  color: red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+.MaxiSys__MaxiFlashs img {
+  max-width: 100%;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.MaxiSys__MaxiFlashs section {
+  text-align: center;
+}
+.MaxiSys__MaxiFlashs p {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  color: #6a6a6a;
+  font-weight: bold;
+  padding-left: 25px;
+}
+.MaxiSys__MaxiFlashs div {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(55, 149, 243);
+}
+.MaxiSys__freeTrening {
+  max-width: 527px;
+  margin: auto;
+}
+.MaxiSys__freeTrening img {
+  max-width: 100%;
+  margin-left: 20px;
+}
+.MaxiSys__freeTrening h1 {
+  text-align: center;
+  color: #6a6a6a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.MaxiSys__freeTrening h1 span {
+  color: black;
+}
+.MaxiSys__freeTrening section {
+  text-align: center;
+}
+.MaxiSys__freeTrening h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 25px;
+  padding-top: 15px;
+}
+.MaxiSys__freeTrening a {
+  display: flex;
+  margin-top: 13px;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(55, 149, 243);
+  margin-bottom: 25px;
+}
+.MaxiSys__freeTrening a img {
+  margin-top: -2px;
+  width: 25px;
+  margin-right: 10px;
+}
+.MaxiSys__freeTrening section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.MaxiSys__freeTrening section div {
+  text-align: left;
+}
+.MaxiSys__freeTrening section h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 5px;
+  padding-left: 25px;
+}
+.MaxiSys__freeTrening section p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 5px;
+  color: #6a6a6a;
+}
+.MaxiSys__freeTrening section .if_design {
+  margin-top: 25px;
+}
+.MaxiSys__freeTrening section .design-size {
+  width: 45px;
+}
+.MaxiSys__freeTrening section h3 {
+  font-size: 20px;
+}
+.MaxiSys__dop-function {
+  max-width: 527px;
+  margin: auto;
+  text-align: center;
+}
+.MaxiSys__dop-function img {
+  max-width: 100%;
+  margin-left: 20px;
+}
+.MaxiSys__dop-function h4 {
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px;
+  padding-left: 25px;
+}
+.MaxiSys__dop-function p {
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 5px;
+  color: #6a6a6a;
+}
+.MaxiSys__dop-function button {
+  background-color: rgb(55, 149, 243);
+  padding: 15px 45px;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
+.section_h1-size {
+  text-align: center;
+  color: #6a6a6a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.section_h1-size span {
+  color: black;
+}
+
+.test-draive {
+  background: url(/img/catalog_img/testdriveBg.jpg) center right no-repeat;
+  background-size: contain;
+}
+.test-draive p {
+  max-width: 400px;
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 65px;
+  color: #6a6a6a;
+}
+
+.button_main {
+  background-color: rgb(55, 149, 243);
+  padding: 15px 45px;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 45px;
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+.display_phone {
+  display: block;
+}
+
+.display_tablet {
+  display: none;
+}
+
+.display_pc {
+  display: none;
+}
 
 /* CSS для: 768px – 991px */
 @media (min-width: 768px) {
-  body {
-    background-color: pink;
+  footer section {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .display_phone {
+    display: none;
+  }
+  .display_tablet {
+    display: block;
+  }
+  .display_pc {
+    display: none;
+  }
+  .MaxiSys__headersection h1 {
+    font-size: 35px;
+  }
+  .MaxiSys__headersection h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  .MaxiSys__headersection img {
+    max-width: 100%;
+  }
+  .MaxiSys__headersection div {
+    max-width: 992px;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .MaxiSys__headersection div section {
+    max-width: 527px;
+    margin: auto;
+    display: block;
+    text-align: left;
+    color: #b83834;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .MaxiSys__headersection div section h3 {
+    width: 180px;
+  }
+  .MaxiSys__headersection div section img {
+    max-width: 120px;
+    padding-right: 8px;
+    margin-bottom: 15px;
+  }
+  .MaxiSys__headersection-headerSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .MaxiSys__headersection-elements {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 30px;
+  }
+  .MaxiSys__headersection-elements p {
+    font-size: 15px;
+    color: #707171;
+    text-align: center;
+  }
+  .MaxiSys__headersection-elements img {
+    max-width: 55px;
+  }
+  .MaxiSys__diagnostick {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .MaxiSys__diagnostick h1 {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #6a6a6a;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  .MaxiSys__diagnostick h1 span {
+    color: black;
+  }
+  .MaxiSys__diagnostick span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .MaxiSys__diagnostick span div {
+    height: auto;
+    border-bottom: 2px solid red;
+  }
+  .MaxiSys__diagnostick img {
+    max-width: 600px;
+  }
+  .MaxiSys__diagnostick ul {
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 20px;
+    border-bottom: none;
+  }
+  .MaxiSys__diagnostick h3 {
+    line-height: 1.42857143;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .MaxiSys__diagnostick li {
+    color: #6a6a6a;
+    line-height: 1.5;
+    text-align: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: inside;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .MaxiSys__functions {
+    font-size: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .MaxiSys__functions h1 {
+    margin-bottom: 25px;
+    margin-right: 120px;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 45px;
+  }
+  .MaxiSys__functions section {
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .MaxiSys__intelectual-diagnostick div {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+  .MaxiSys__intelectual-diagnostick img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .MaxiSys__intelectual-diagnostick h1 {
+    font-size: 45px;
+  }
+  .MaxiSys__intelectual-diagnostick h4 {
+    font-size: 30px;
+  }
+  .MaxiSys__intelectual-diagnostick p {
+    font-size: 22px;
+  }
+  .MaxiSys__intelectual-diagnostick p span {
+    color: rgb(55, 149, 243);
+  }
+  .MaxiSys__intelectual-diagnostick ul {
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    padding-bottom: 15px;
+  }
+  .MaxiSys__intelectual-diagnostick a h5 {
+    margin-top: 13px;
+    font-size: 22px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(55, 149, 243);
+  }
+  .MaxiSys__intelectual-diagnostick .maxiFlash-sector {
+    display: flex;
+  }
+  .MaxiSys__intelectual-diagnostick .text-line {
+    margin-left: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    display: grid;
+    grid-gap: 12px;
+    margin-top: 20px;
+  }
+  .MaxiSys__intelectual-diagnostick .text-line div {
+    border-top: 1px solid rgb(55, 149, 243);
+  }
+  .MaxiSys__intelectual-diagnostick .text-line h1 {
+    padding-bottom: 0px;
+    font-size: 25px;
+  }
+  .MaxiSys__intelectual-diagnostick .text-line span {
+    margin-top: 30px;
+  }
+  .MaxiSys__MaxiFlashs {
+    max-width: 800px;
+  }
+  .MaxiSys__MaxiFlashs h1 {
+    font-size: 30px;
+  }
+  .MaxiSys__MaxiFlashs span h1 {
+    font-size: 40px;
+  }
+  .MaxiSys__differents {
+    padding-top: 35px;
+    max-width: 800px;
+    margin: auto;
+  }
+  .MaxiSys__differents span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .MaxiSys__differents h1 {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 25px;
+    color: #6a6a6a;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 45px;
+  }
+  .MaxiSys__differents h1 span {
+    color: black;
+  }
+  .MaxiSys__differents h4 {
+    font-size: 35px;
+  }
+  .MaxiSys__differents p {
+    font-size: 25px;
+  }
+  .MaxiSys__freeTrening {
+    max-width: 900px;
+    text-align: center;
+  }
+  .MaxiSys__freeTrening img {
+    width: 750px;
+  }
+  .MaxiSys__freeTrening h1 {
+    font-size: 35px;
+  }
+  .MaxiSys__freeTrening h3 {
+    text-align: left;
+    font-size: 35px;
+    padding-bottom: 15px;
+    margin-left: 105px;
+  }
+  .MaxiSys__freeTrening a {
+    display: flex;
+    margin-top: 13px;
+    font-size: 25px;
+    margin-left: 85px;
+  }
+  .MaxiSys__freeTrening a img {
+    margin-top: -12px;
+    width: 45px;
+    margin-right: 10px;
+  }
+  .MaxiSys__freeTrening section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .MaxiSys__freeTrening section div {
+    text-align: left;
+  }
+  .MaxiSys__freeTrening section h4 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 25px;
+  }
+  .MaxiSys__freeTrening section p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-top: 5px;
+    color: #6a6a6a;
+  }
+  .MaxiSys__freeTrening section .if_design {
+    margin-top: 25px;
+  }
+  .MaxiSys__freeTrening section .design-size {
+    width: 45px;
+  }
+  .MaxiSys__freeTrening section h3 {
+    font-size: 20px;
   }
 }
 /* CSS для: 992px – 1119px */
 @media (min-width: 1200px) {
-  body {
-    background-color: aqua;
+  footer {
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #292727;
+  }
+  footer section {
+    justify-content: space-between;
+    display: flex;
+  }
+  .display_phone {
+    display: none;
+  }
+  .display_tablet {
+    display: none;
+  }
+  .display_pc {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
